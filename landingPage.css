@@ -27,6 +27,9 @@ html {
         color: gray;
         cursor: pointer;
 }
+#navtool:hover {
+        color: #387ed1;
+}
 #hamburgur {
         height: 18px;
         width: 18px;
