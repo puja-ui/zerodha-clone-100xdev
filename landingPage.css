@@ -1,0 +1,63 @@
+html {
+        font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 150px;
+        padding-right: 150px;
+        box-shadow: 0px 1px 2px #7a78783d;
+        box-sizing: border-box;
+        margin-right: -10px;
+        margin-left: -10px;
+        /* position: sticky; */
+        background-color: white;
+}
+#navtools {
+        display: flex;
+}
+#logo {
+        width: 129px;
+        height: 17px;
+        padding: 20px;
+        cursor: pointer;
+}
+#navtool {
+        padding: 20px;
+        color: gray;
+        cursor: pointer;
+}
+#hamburgur {
+        height: 18px;
+        width: 18px;
+        cursor: pointer;
+}
+#display-img {
+        height: 191px;
+        width: 455px;
+        margin-top: 104.6px;
+}
+h1 {
+        font-weight: 500;
+        font-size: 3rem;
+        color: rgb(67, 67, 67);
+        margin-top: 60px;
+        margin-bottom: 23px;
+}
+p {
+        font-size: 1.30rem;
+        color: rgb(78, 77, 77);
+}
+button {
+        padding: 10px 30px;
+        font-size: 1.30rem;
+        color: white;
+        background-color: #387ed1;
+        border-radius: 3px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        margin-top: 28px;
+        cursor: pointer;
+}
+button:hover {
+        background-color: black;
+}
