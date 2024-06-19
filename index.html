@@ -24,7 +24,37 @@
                         <h1>Invest in everything</h1>
                         <p>Online platform to invest in stocks, derivatives, mutual funds, and more</p>
                         <button>Sign up now</button>
+                        <div>
+                                <button id="theCounter" onclick="counter()">Counter 1</button>
+                        </div>
+                        <div id="secondButton"></div>
                 </center>
+                <script>
+                        let state = {
+                                count: 0
+                        }
+                        let counter = () => {
+                                let count = document.getElementById("theCounter").innerHTML
+                                count = parseInt(count.split(" ")[1])
+                                count++
+                                document.getElementById("theCounter").innerHTML = `Counter ${count}`
+                        }
+                        let buttonPressEvent = () => {
+                                buttonRerenderer(++state.count)
+                        }
+                        let buttonComponent = (c) => {
+                                let button = document.createElement("button")
+                                button.setAttribute("onClick", "buttonPressEvent()")
+                                button.innerHTML = `StatedCounter ${c}`
+                                return button
+                        }
+                        let buttonRerenderer = () => {
+                                document.getElementById("secondButton").innerHTML = ""
+                                const component = buttonComponent(state.count)
+                                document.getElementById("secondButton").appendChild(component)
+                        }
+                        buttonRerenderer()
+                </script>
         </body>
 </html>
 
